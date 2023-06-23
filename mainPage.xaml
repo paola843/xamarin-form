@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout Background="pink">
+        <Label x:Name="lbl_principal"
+               Text="Bienvenido: Llene con sus datos"
+               FontSize="Medium"
+               Margin="8"/>
+
+        <ProgressBar x:Name="progress"
+                     Progress=".0"/>
+        <Grid>
+            <Label x:Name="lbl_progress"
+                   Text="0%"
+                   FontSize="Large"
+                   TextColor="Black"/>
+            <Switch x:Name="sw_example"
+                    IsToggled="False"
+                    Toggled="sw_example_Toggled"/>
+            
+        </Grid>
+        <Frame Margin="8"
+               BackgroundColor="White">
+            <StackLayout>
+                <Entry x:Name="lbl_nombre"
+                       Placeholder="Ingrese sus nombres "
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_apellido"
+                       Placeholder="Ingrese sus apellidos"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_fecha"
+                       Placeholder="Ingrese su fecha de nacimiento"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_ocupacion"
+                       Placeholder="Ingrese sus ocupacion"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_celular"
+                       Placeholder="Ingrese su numero celular"
+                       FontSize="Medium"/>
+                <Entry x:Name="lbl_correo"
+                       Placeholder="Ingrese su correo"
+                       FontSize="Medium"/>
+
+
+            </StackLayout>
+        </Frame>
+        <Button x:Name="btn_ingresar"
+                Text="Aceptar"
+                FontSize="Large"
+                Clicked="btn_ingresar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
